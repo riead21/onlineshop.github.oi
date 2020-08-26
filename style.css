@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-style{
+    background: #fff;
+    box-shadow: 0 10px 30px 0 rgb(138,155,165,0.15);
+}
+.navbar-collapse ul li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+.navbar-collapse ul li a:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    bottom: 50%;
+    width: 0%;
+    height: 3%;
+    background:white;
+    transition: all 0.3s linear;
+}
+.navbar-collapse ul li a:hover:before{
+width: 80%;
+}
+@media(max-width:998px)
+{
+.navbar-nav{
+    margin-top: 40px;
+    text-align: center;
+}
+.navbar-collapse ul li a:hover:before{
+    width: 15%;
+    }
+}
+.text{
+    text-align: center;
+}
+.color {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2Px;
+}
+.text{
+    font-size: 20px;
+    
+}
+.text1{
+letter-spacing: 2px;
+font-size: 20px;
+}
+.bg_color{
+    background-color: sienna;
+}
+.service{
+    border-radius: 30px 500px 30px 500px;
+}
+.facbook{
+    background-color: blue;
+    height: 20px;
+    width: 50px;
+}

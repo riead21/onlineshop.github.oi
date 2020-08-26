@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>contact us</title>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+.navbar-collapse ul li a:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    bottom: 50%;
+    width: 0%;
+    height: 3%;
+    background:white;
+    transition: all 0.3s linear;
+}
+.navbar-collapse ul li a:hover:before{
+width: 80%;
+}
+.navbar-collapse ul li a{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+.form{
+    margin-left: 50%;
+    margin-top: 20px;
+    width: 80%;
+}
+.contact{
+    width: 70%;
+}
+.s1{
+    width: 80%;
+}
+.curve{
+    border-radius: 30px 500px 30px 500px;
+}
+@media(max-width:998px)
+{
+.form{
+   margin-left: 40px;
+  }
+  .curve{
+    border-radius: 30px 200px 30px 80px; 
+  }}
+ 
+
+    .navbar-collapse ul li a{
+text-align: center;
+
+    }
+</style>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<header class="container-fluid mx-auto  ">
+    <div class="row">
+        <div class="col-md-10 col-11 mx-auto ">
+          <nav class="navbar navbar-expand-lg navbar-light bg-primary   " >
+              <a class="navbar-brand" href="1st.html">sunFly Girls</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="1st.html" style="color:white ;">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="products.html">products</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about us.html">about us</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact us.html">contact us</a>
+                    </li>
+                </ul>
+              </div>
+            </nav>
+</div>
+        </div>
+
+    </div></header>
+    </head>
+    <body>
+        <section class="container-fluid mx-auto   ">
+            <div class="row">
+                <div class="col-md-10 col-11 mx-auto  contact text-center text-capitalize">
+                    <h1> contact form</h1><hr class="w-50% bg-danger">
+                    </div></div>
+
+        </section>
+        <section class="container-fluid mx-auto  s1 ">
+            <div class="row">
+                <div class="col-md-10 col-11 mx-auto bg-danger curve ">
+                    <div class="row">
+                    <div class="col-lg-7 col-md-6 col-12  ">
+                   
+                            <form class="form text-capitalize text-white " onsubmit="return validation()" autocomplete="off">
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">name</label>
+                                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your name">
+                                  <span class="text-white font-weight-bold " id="username"> </span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">email</label>
+                                    <input type="email" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Enter your email">
+                                    <span class="text-white font-weight-bold " id="useraddress"> </span>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">mobile-number</label>
+                                    <input type="text" class="form-control" id="mobile-number" aria-describedby="emailHelp" placeholder="Enter your mobile-number">
+                                    <span class="text-white font-weight-bold " id="usermobilenumber"> </span>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">comment</label>
+                                   
+                                    <textarea class="form-control" id="comment" rows="5" placeholder="enter your comment"></textarea>
+                                    <span class="text-white font-weight-bold " id="usercomment"> </span>
+                                  </div>
+                              
+                                <div class="form-check">
+                                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary" name="submit" value="submit">submit</button>
+                              </form>
+
+                        
+
+                    </div>
+</div></div>
+
+
+                </div>
+
+        </section>
+        <script>
+          function validation(){
+            var nam1=document.getElementById('name').value;
+            var address1=document.getElementById('address').value;
+            var mobilenumber=document.getElementById('mobile-number').value;
+            var comment=document.getElementById('comment').value;
+            
+            if(nam1==""){
+              document.getElementById('username').innerHTML="**please enter your name";
+              return false;
+
+            }
+      
+       
+            if(address1==""){
+              document.getElementById('useraddress').innerHTML="**please enter your address";
+              return false;
+
+          }
+         
+          if(mobilenumber==""){
+              document.getElementById('usermobilenumber').innerHTML="**please fiil up mobile number";
+              return false;
+            }
+            if(comment==""){
+              document.getElementById('usercomment').innerHTML="**please fiil up comment";
+              return false;
+            }
+          }
+         
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>
